@@ -40,6 +40,7 @@
             this.lbl_Texto3 = new System.Windows.Forms.Label();
             this.txt_2opcR = new System.Windows.Forms.TextBox();
             this.txt_2opc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_Calcular
@@ -62,6 +63,7 @@
             this.rb_Temperatura.TabStop = true;
             this.rb_Temperatura.Text = "Temperatura";
             this.rb_Temperatura.UseVisualStyleBackColor = true;
+            this.rb_Temperatura.CheckedChanged += new System.EventHandler(this.rb_Temperatura_CheckedChanged);
             // 
             // rb_Longitud
             // 
@@ -73,6 +75,7 @@
             this.rb_Longitud.TabStop = true;
             this.rb_Longitud.Text = "Longitud";
             this.rb_Longitud.UseVisualStyleBackColor = true;
+            this.rb_Longitud.CheckedChanged += new System.EventHandler(this.rb_Longitud_CheckedChanged);
             // 
             // rb_Peso
             // 
@@ -108,6 +111,7 @@
             this.lbl_Texto1.Size = new System.Drawing.Size(35, 13);
             this.lbl_Texto1.TabIndex = 6;
             this.lbl_Texto1.Text = "label1";
+            this.lbl_Texto1.Click += new System.EventHandler(this.lbl_Texto1_Click);
             // 
             // lbl_Texto2
             // 
@@ -117,6 +121,7 @@
             this.lbl_Texto2.Size = new System.Drawing.Size(35, 13);
             this.lbl_Texto2.TabIndex = 7;
             this.lbl_Texto2.Text = "label2";
+            this.lbl_Texto2.Click += new System.EventHandler(this.lbl_Texto2_Click);
             // 
             // lbl_Texto4
             // 
@@ -150,11 +155,21 @@
             this.txt_2opc.Size = new System.Drawing.Size(100, 20);
             this.txt_2opc.TabIndex = 8;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(34, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Dependiendo de la unidad a convertir rellene el espacio deseado";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 231);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Texto4);
             this.Controls.Add(this.lbl_Texto3);
             this.Controls.Add(this.txt_2opcR);
@@ -189,6 +204,7 @@
         private System.Windows.Forms.Label lbl_Texto3;
         private System.Windows.Forms.TextBox txt_2opcR;
         private System.Windows.Forms.TextBox txt_2opc;
+        private System.Windows.Forms.Label label1;
     }
 }
 
