@@ -41,6 +41,41 @@ namespace POO_Problema_2
                         txt_2opcR.Text = Convert.ToString(res2);
                     }
                 }
+
+
+                if (rb_Longitud.Checked == true)
+                {
+                    if (txt_1opc.Text.Length != 0)
+                    {
+                        esp1 = Convert.ToDouble(txt_1opc.Text);
+                        res1 = esp1*3.281;
+                        txt_1opcR.Text = Convert.ToString(res1);
+                    }
+
+                    if (txt_2opc.Text.Length != 0)
+                    {
+                        esp2 = Convert.ToDouble(txt_2opc.Text);
+                        res2 = Math.Round(esp2/3.281,3);
+                        txt_2opcR.Text = Convert.ToString(res2);
+                    }
+                }
+
+                if (rb_Peso.Checked == true)
+                {
+                    if (txt_1opc.Text.Length != 0)
+                    {
+                        esp1 = Convert.ToDouble(txt_1opc.Text);
+                        res1 = esp1 * 2.205;
+                        txt_1opcR.Text = Convert.ToString(res1);
+                    }
+
+                    if (txt_2opc.Text.Length != 0)
+                    {
+                        esp2 = Convert.ToDouble(txt_2opc.Text);
+                        res2 = Math.Round(esp2 / 2.205, 3);
+                        txt_2opcR.Text = Convert.ToString(res2);
+                    }
+                }
             }
             catch (FormatException)
             {
